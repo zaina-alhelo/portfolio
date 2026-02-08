@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaina Alhelo - Data Science & AI Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">ZA</div>
+        <div class="nav-center">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#skills" data-ar="المهارات" data-en="Skills">المهارات</a></li>
+                <li><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                <li><a href="#experience" data-ar="الخبرة" data-en="Experience">الخبرة</a></li>
+                <li><a href="#certificates" data-ar="الشهادات" data-en="Certificates">الشهادات</a></li>
+                <li><a href="#contact" data-ar="تواصل معي" data-en="Contact">تواصل معي</a></li>
+            </ul>
+            <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn">English</button>
+        </div>
+        <div class="mobile-menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span data-ar="مرحباً، أنا" data-en="Hello, I'm">مرحباً، أنا</span><br>
+                    <span class="gradient-text" data-ar="زينة الحلو" data-en="zaineh Alhelo">زينة الحلو</span>
+                </h1>
+                <p class="hero-subtitle">Data Scientist & AI Developer</p>
+                <p class="hero-description"
+                    data-ar="متخصصة في علوم البيانات والذكاء الاصطناعي، خريجة متفوقة بمعدل 92.09%. شغوفة ببناء حلول مبتكرة باستخدام Python وتحليل البيانات والتطوير الكامل."
+                    data-en="Specialized in Data Science and AI, distinguished graduate with a GPA of 92.09%. Passionate about building innovative solutions using Python, data analysis, and full-stack development.">
+                    متخصصة في علوم البيانات والذكاء الاصطناعي، خريجة متفوقة بمعدل 92.09%. شغوفة ببناء حلول مبتكرة
+                    باستخدام Python وتحليل البيانات والتطوير الكامل.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</a>
+                    <a href="#projects" class="btn btn-secondary" data-ar="اعرض المشاريع" data-en="View Projects">اعرض
+                        المشاريع</a>
+                </div>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">92.09%</div>
+                        <div class="stat-label" data-ar="المعدل التراكمي" data-en="GPA">المعدل التراكمي</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">970</div>
+                        <div class="stat-label" data-ar="ساعة تدريب" data-en="Training Hours">ساعة تدريب</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4+</div>
+                        <div class="stat-label" data-ar="مشاريع" data-en="Projects">مشاريع</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <div class="profile-bg"></div>
+                    <div class="profile-ring"></div>
+                    <div class="profile-placeholder">
+                        <img src="images/zaineh.jpg" alt="Zaineh Alhelo" class="profile-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="scroll-reveal">
+        <h2 class="section-title" data-ar="المهارات التقنية" data-en="Technical Skills">المهارات التقنية</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3 class="skill-title" data-ar="لغات البرمجة" data-en="Programming Languages">لغات البرمجة</h3>
+                <ul class="skill-list">
+                    <li>Python (FastAPI)</li>
+                    <li>JavaScript</li>
+                    <li>PHP & Laravel</li>
+                    <li>C++ & C#</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3 class="skill-title" data-ar="قواعد البيانات" data-en="Databases">قواعد البيانات</h3>
+                <ul class="skill-list">
+                    <li>SQL</li>
+                    <li>MySQL</li>
+                    <li>Oracle</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3 class="skill-title" data-ar="الأدوات والتقنيات" data-en="Tools & Technologies">الأدوات والتقنيات
+                </h3>
+                <ul class="skill-list">
+                    <li>Git & GitHub</li>
+                    <li>Power BI</li>
+                    <li>Bootstrap</li>
+                    <li>React</li>
+                    <li>WordPress</li>
+                    <li>Figma</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎯</div>
+                <h3 class="skill-title" data-ar="المهارات الشخصية" data-en="Soft Skills">المهارات الشخصية</h3>
+                <ul class="skill-list">
+                    <li data-ar="حل المشكلات" data-en="Problem Solving">حل المشكلات</li>
+                    <li data-ar="التفكير النقدي" data-en="Critical Thinking">التفكير النقدي</li>
+                    <li data-ar="إدارة المشاريع" data-en="Project Management">إدارة المشاريع</li>
+                    <li data-ar="العمل الجماعي" data-en="Teamwork">العمل الجماعي</li>
+                    <li data-ar="التواصل الفعال" data-en="Effective Communication">التواصل الفعال</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Section -->
+<section id="projects" class="scroll-reveal">
+    <h2 class="section-title" data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image-container">
+                <!-- <img src="images/wikidiet.jpg" alt="WikiDiet Project" class="project-actual-image"> -->
+                <div class="project-image-overlay"></div>
+                <div class="project-icon-badge">🍎</div>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">WikiDiet</h3>
+                <p class="project-description"
+                    data-ar="تطبيق شامل لحساب مؤشر كتلة الجسم (BMI)، تحليل القيم الغذائية، وتقديم أنظمة غذائية مخصصة للمستخدمين."
+                    data-en="Comprehensive app for BMI calculation, nutritional analysis, and personalized diet plans.">
+                    تطبيق شامل لحساب مؤشر كتلة الجسم (BMI)، تحليل القيم الغذائية، وتقديم أنظمة غذائية مخصصة للمستخدمين.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">HTML & CSS & JS</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/zaina-alhelo/MasterPiece.git" class="project-link" target="_blank">
+                        <span data-ar="عرض المشروع" data-en="View Project">عرض المشروع</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                <!-- <img src="images/eye-clinic.jpg" alt="AI Eye Clinic System" class="project-actual-image"> -->
+                <div class="project-image-overlay"></div>
+                <div class="project-icon-badge">👁️</div>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">AI Eye Clinic System</h3>
+                <p class="project-description"
+                    data-ar="نظام ذكي لإدارة العيادات الطبية مدعوم بالذكاء الاصطناعي مع نظام محادثة للمرضى."
+                    data-en="Smart clinic management system powered by AI with a patient chat system.">
+                    نظام ذكي لإدارة العيادات الطبية مدعوم بالذكاء الاصطناعي مع نظام محادثة للمرضى.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">AI</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Chat System</span>
+                    <span class="tech-tag">Chat Bot</span>
+                    <span class="tech-tag">Laravel</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/zaina-alhelo/Graduation-project.git" target="_blank" class="project-link">
+                        <span data-ar="عرض المشروع" data-en="View Project">عرض المشروع</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                <!-- <img src="images/sports-booking.jpg" alt="Sports Booking" class="project-actual-image"> -->
+                <div class="project-image-overlay"></div>
+                <div class="project-icon-badge">⚽</div>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Sports Booking</h3>
+                <p class="project-description" data-ar="منصة للبحث عن الملاعب الرياضية وحجزها بسهولة وسرعة."
+                    data-en="Platform for searching and booking sports courts easily and quickly.">
+                    منصة للبحث عن الملاعب الرياضية وحجزها بسهولة وسرعة.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Laravel</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/abdullahadaileh/playZone.git" target="_blank" class="project-link">
+                        <span data-ar="عرض المشروع" data-en="View Project">عرض المشروع</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                <!-- <img src="images/premier.jpg" alt="Premier" class="project-actual-image"> -->
+                <div class="project-image-overlay"></div>
+                <div class="project-icon-badge">📋</div>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Premier</h3>
+                <p class="project-description" data-ar="أداة متقدمة لإدارة المهام والمشاريع بكفاءة عالية."
+                    data-en="Advanced tool for managing tasks and projects with high efficiency.">
+                    أداة متقدمة لإدارة المهام والمشاريع بكفاءة عالية.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/zaina-alhelo/taskManagment.git" target="_blank" class="project-link">
+                        <span data-ar="عرض المشروع" data-en="View Project">عرض المشروع</span>
+                        <span class="link-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="scroll-reveal">
+        <h2 class="section-title" data-ar="الخبرة العملية" data-en="Work Experience">الخبرة العملية</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date" data-ar="مايو 2024 - نوفمبر 2024" data-en="May 2024 - November 2024">مايو
+                        2024 - نوفمبر 2024</div>
+                    <h3 class="timeline-title" data-ar="متدربة برمجة" data-en="Programming Trainee">متدربة برمجة</h3>
+                    <div class="timeline-company" data-ar="أكاديمية أورانج للبرمجة، العقبة - الأردن"
+                        data-en="Orange Coding Academy, Aqaba - Jordan">أكاديمية أورانج للبرمجة، العقبة - الأردن</div>
+                    <p class="timeline-description"
+                        data-ar="إكمال برنامج تدريبي مكثف لمدة 7 أشهر (910 ساعة) في تطوير الويب الكامل، مع اكتساب خبرة عملية في HTML, CSS, JavaScript, PHP, Laravel, React, WordPress, Bootstrap, وFigma، بالإضافة إلى تطوير مهارات العمل الجماعي والتواصل والقيادة."
+                        data-en="Completed intensive 7-month training program (910 hours) in full-stack web development, gaining hands-on experience in HTML, CSS, JavaScript, PHP, Laravel, React, WordPress, Bootstrap, and Figma, alongside developing teamwork, communication, and leadership skills.">
+                        إكمال برنامج تدريبي مكثف لمدة 7 أشهر (910 ساعة) في تطوير الويب الكامل، مع اكتساب خبرة عملية في
+                        HTML, CSS, JavaScript, PHP, Laravel, React, WordPress, Bootstrap, وFigma، بالإضافة إلى تطوير
+                        مهارات العمل الجماعي والتواصل والقيادة.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date" data-ar="سبتمبر 2024 - أكتوبر 2024"
+                        data-en="September 2024 - October 2024">سبتمبر 2024 - أكتوبر 2024</div>
+                    <h3 class="timeline-title" data-ar="متدربة - Data Science & AI"
+                        data-en="Trainee - Data Science & AI">متدربة - Data Science & AI</h3>
+                    <div class="timeline-company" data-ar="مركز التدريب في جامعة الأميرة سمية للتكنولوجيا"
+                        data-en="Training Center at Princess Sumaya University for Technology">مركز التدريب في جامعة
+                        الأميرة سمية للتكنولوجيا</div>
+                    <p class="timeline-description"
+                        data-ar="إكمال برنامج تدريبي لمدة 25 ساعة في علوم البيانات والذكاء الاصطناعي، مع اكتساب خبرة عملية في Power BI وتطوير مهارات تحليل البيانات، التصور البصري، وسرد القصص من خلال مشاريع واقعية."
+                        data-en="Completed 25-hour training program in Data Science and AI, gaining practical experience in Power BI and developing data analysis, visualization, and storytelling skills through real-world projects.">
+                        إكمال برنامج تدريبي لمدة 25 ساعة في علوم البيانات والذكاء الاصطناعي، مع اكتساب خبرة عملية في
+                        Power BI وتطوير مهارات تحليل البيانات، التصور البصري، وسرد القصص من خلال مشاريع واقعية.
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-date" data-ar="سبتمبر 2023 - ديسمبر 2023"
+                        data-en="September 2023 - December 2023">سبتمبر 2023 - ديسمبر 2023</div>
+                    <h3 class="timeline-title" data-ar="متدربة Python" data-en="Python Trainee">متدربة Python</h3>
+                    <div class="timeline-company" data-ar="شركة الأمل الدولية، عمان - الأردن"
+                        data-en="Al-Amal International Company, Amman - Jordan">شركة الأمل الدولية، عمان - الأردن</div>
+                    <p class="timeline-description"
+                        data-ar="إكمال دورة Python مدتها 60 ساعة مع التركيز على الذكاء الاصطناعي والتعلم الآلي، واكتساب مهارات في البرمجة، معالجة البيانات، وتطبيق النماذج."
+                        data-en="Completed 60-hour Python course focusing on AI and Machine Learning, gaining skills in programming, data processing, and model implementation.">
+                        إكمال دورة Python مدتها 60 ساعة مع التركيز على الذكاء الاصطناعي والتعلم الآلي، واكتساب مهارات في
+                        البرمجة، معالجة البيانات، وتطبيق النماذج.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Certificates Section -->
+<section id="certificates" class="scroll-reveal">
+    <h2 class="section-title" data-ar="الشهادات" data-en="Certificates">الشهادات</h2>
+    <div class="certificates-grid">
+        <div class="certificate-card">
+            <div class="certificate-image-wrapper">
+                <img src="images/certificate1.jpg" alt="Certificate 1" class="certificate-img">
+                <div class="certificate-overlay">
+                    <div class="certificate-info">
+                        <h3 data-ar="شهادة تطوير الويب الكامل" data-en="Full Stack Development Certificate">
+                            شهادة تطوير الويب الكامل
+                        </h3>
+                        <p data-ar="أكاديمية أورانج - 910 ساعة تدريبية" data-en="Orange Academy - 910 Training Hours">
+                            أكاديمية أورانج - 910 ساعة تدريبية
+                        </p>
+                    </div>
+                    <button class="zoom-btn" onclick="openCertificateModal(this)">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <div class="certificate-image-wrapper">
+                <img src="images/certificate2.jpg" alt="Certificate 2" class="certificate-img">
+                <div class="certificate-overlay">
+                    <div class="certificate-info">
+                        <h3 data-ar="شهادة علوم البيانات والذكاء الاصطناعي" data-en="Data Science & AI Certificate">
+                            شهادة علوم البيانات والذكاء الاصطناعي
+                        </h3>
+                        <p data-ar="جامعة الأميرة سمية للتكنولوجيا" data-en="Princess Sumaya University">
+                            جامعة الأميرة سمية للتكنولوجيا
+                        </p>
+                    </div>
+                    <button class="zoom-btn" onclick="openCertificateModal(this)">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="certificate-card">
+            <div class="certificate-image-wrapper">
+                <img src="images/certificate3.jpg" alt="Certificate 4" class="certificate-img">
+                <div class="certificate-overlay">
+                    <div class="certificate-info">
+                        <h3 data-ar="شهادة Python" data-en="Python Certificate">
+                            شهادة Python
+                        </h3>
+                        <p data-ar="شركة الأمل الدولية - 60 ساعة" data-en="Al-Hope International - 60 Hours">
+                            شركة الرجاء الدولية - 60 ساعة
+                        </p>
+                    </div>
+                    <button class="zoom-btn" onclick="openCertificateModal(this)">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+<!-- 
+        <div class="certificate-card">
+            <div class="certificate-image-wrapper">
+                <img src="images/certificate4.jpg" alt="Certificate 4" class="certificate-img">
+                <div class="certificate-overlay">
+                    <div class="certificate-info">
+                        <h3 data-ar="شهادة إضافية" data-en="Additional Certificate">
+                            شهادة إضافية
+                        </h3>
+                        <p data-ar="وصف الشهادة" data-en="Certificate Description">
+                            وصف الشهادة
+                        </p>
+                    </div>
+                    <button class="zoom-btn" onclick="openCertificateModal(this)">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+<!-- Modal للشهادة المكبرة -->
+<div id="certificateModal" class="certificate-modal">
+    <span class="modal-close" onclick="closeCertificateModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div class="modal-caption" id="modalCaption"></div>
+</div>
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-reveal">
+        <h2 class="section-title" data-ar="تواصل معي" data-en="Contact Me">تواصل معي</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h3 data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</h3>
+                        <a href="mailto:zainaalhelo00@gmail.com">zainaalhelo00@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h3 data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</h3>
+                        <a href="tel:+962771983544">+962 771983544</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h3 data-ar="الموقع" data-en="Location">الموقع</h3>
+                        <p data-ar="العقبة - الأردن" data-en="Aqaba - Jordan">العقبة - الأردن</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/zaina-alhelo" target="_blank" class="social-link" title="GitHub">
+                        <span style="font-family: 'Space Mono', monospace;">&lt;/&gt;</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zaina-alhelo" target="_blank" class="social-link"
+                        title="LinkedIn">
+                        in
+                    </a>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <div class="contact-cta-content">
+                    <div class="contact-cta-icon">💼</div>
+                    <h3 data-ar="دعنا نتعاون!" data-en="Let's Collaborate!">دعنا نتعاون!</h3>
+                    <p data-ar="أبحث عن فرصة لتطبيق وتوسيع خبرتي في تطوير Backend والذكاء الاصطناعي. دعنا نبني شيئاً رائعاً معاً!"
+                        data-en="Looking for opportunities to apply and expand my expertise in Backend development and AI. Let's build something amazing together!">
+                        أبحث عن فرصة لتطبيق وتوسيع خبرتي في تطوير Backend والذكاء الاصطناعي. دعنا نبني شيئاً رائعاً
+                        معاً!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><span data-ar="صُمم بـ" data-en="Designed with">صُمم بـ</span> <span class="footer-heart">♥</span> <span
+                data-ar="بواسطة زينة الحلو © 2026" data-en="by Zaina Alhelo © 2026">بواسطة زينة الحلو © 2026</span></p>
+    </footer>
+
+    <script>
+        /* ===============================
+           Particles Background
+        =============================== */
+        function createParticles() {
+            const container = document.querySelector('.bg-animation');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.width = Math.random() * 100 + 50 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDuration = Math.random() * 20 + 10 + 's';
+                particle.style.animationDelay = Math.random() * 5 + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        /* ===============================
+           Mobile Menu
+        =============================== */
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        /* ===============================
+           Language Toggle (DEFAULT: EN)
+        =============================== */
+        let currentLang = 'en';
+
+        // Initial language setup
+        document.documentElement.setAttribute('lang', 'en');
+        document.documentElement.setAttribute('dir', 'ltr');
+        document.getElementById('langBtn').textContent = 'العربية';
+        updateContent('en');
+
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const langBtn = document.getElementById('langBtn');
+
+            if (currentLang === 'en') {
+                currentLang = 'ar';
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                langBtn.textContent = 'English';
+                updateContent('ar');
+            } else {
+                currentLang = 'en';
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                langBtn.textContent = 'العربية';
+                updateContent('en');
+            }
+        }
+
+        function updateContent(lang) {
+            document.querySelectorAll('[data-ar][data-en]').forEach(el => {
+                el.textContent = el.getAttribute(lang === 'ar' ? 'data-ar' : 'data-en');
+            });
+        }
+
+        /* ===============================
+           Smooth Scroll
+        =============================== */
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        /* ===============================
+           Scroll Reveal
+        =============================== */
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        });
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        /* ===============================
+           Custom Cursor
+        =============================== */
+        const cursorGlow = document.querySelector('.cursor-glow');
+
+        document.addEventListener('mousemove', e => {
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+        });
+
+        document.querySelectorAll('a, button, .skill-card, .project-card, .timeline-content').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursorGlow.style.transform = 'scale(2)';
+                cursorGlow.style.borderColor = 'var(--secondary)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursorGlow.style.transform = 'scale(1)';
+                cursorGlow.style.borderColor = 'var(--primary)';
+            });
+        });
+
+        /* ===============================
+           Certificates Modal
+        =============================== */
+        function openCertificateModal(btn) {
+            const modal = document.getElementById('certificateModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+
+            const card = btn.closest('.certificate-card');
+            const img = card.querySelector('.certificate-img');
+            const title = card.querySelector('.certificate-info h3');
+
+            modal.classList.add('active');
+            modalImg.src = img.src;
+            modalCaption.textContent = title.textContent;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCertificateModal() {
+            document.getElementById('certificateModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('certificateModal')?.addEventListener('click', e => {
+            if (e.target.id === 'certificateModal') closeCertificateModal();
+        });
+
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') closeCertificateModal();
+        });
+    </script>
+
+</body>
+
+</html>
